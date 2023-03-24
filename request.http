@@ -1,0 +1,20 @@
+###
+GET http://localhost:8000/
+
+###
+GET http://localhost:8000/pets
+
+###
+GET http://localhost:8000/pets/0
+
+###
+GET http://localhost:8000/pets/1
+
+###
+GET http://localhost:8000/pets/2
+
+###
+GET http://localhost:8000/pets/-1
+
+###
+GET http://localhost:8000/something
