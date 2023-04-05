@@ -26,12 +26,19 @@ GET http://localhost:3000/pets
 
 ###
 POST http://localhost:3000/pets
+Content-Type: application/json
+
+{
+    "age": 100,
+    "kind": "emu",
+    "name": "Bro"
+}
 
 ###
 GET http://localhost:3000/aksjg
 
 ###
-PATCH http://localhost:3000/pets/33
+PATCH http://localhost:3000/pets/2
 Content-Type: application/json
 
 {
@@ -39,4 +46,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/pets/33
+DELETE http://localhost:3000/pets/2
