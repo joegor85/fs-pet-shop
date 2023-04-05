@@ -18,3 +18,25 @@ GET http://localhost:8000/pets/-1
 
 ###
 GET http://localhost:8000/something
+
+
+
+###
+GET http://localhost:3000/pets
+
+###
+POST http://localhost:3000/pets
+
+###
+GET http://localhost:3000/aksjg
+
+###
+PATCH http://localhost:3000/pets/33
+Content-Type: application/json
+
+{
+    "kind": "emu"
+}
+
+###
+DELETE http://localhost:3000/pets/33

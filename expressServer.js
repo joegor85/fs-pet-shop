@@ -48,7 +48,10 @@ app.get("/pets/:id", function (req, res) {
 });
 
 
-//
+// Add a pet
+app.post("/pets :info", (req, res)=> {
+
+})
 
 // Make the server start listening for requests
 app.listen(port, function () {
