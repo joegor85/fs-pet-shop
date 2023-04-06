@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 3000;
 //let db_URL = process.env.DATABASE_URL;
 //const sql = postgres(db_URL);
 
-//This adds a "body" object to the request object, which automatically parses the JSON data so you can easily access and minupulate it (such as on line 55:  let pet = req.body
+//This adds a "body" object to the request object, which automatically parses the JSON data so you can easily access and manipulate it (such as on line 55:  let pet = req.body)
 app.use(express.json());
 //This connects our server to the files in the /client folder for use later if we want to serve up a file from there
 app.use(express.static("/client"));
@@ -98,14 +98,14 @@ app.patch("/pets/:petId", (req, res, next) => {
           return next(e);
         });
     }
-//There is a way to replace the below if/else statements with this somehow:
+    //There is a way to replace the below if/else statements with this somehow:
     //sql `UPDATE pets SET age = COALESCE(${data['age']? data['age']:null}, age),
     //                     name = COALESCE(${data['name']? data['name']:null}, name),
     //                     kind = COALESCE(${data['kind']? data['kind']:null}, kind)
     //                     WHERE id = ${petId}`.then(respond=>{
     //                         res.json(respond[0]);
     //})
-//These statements can be replaced with the above, but even better is the one above that
+    //These statements can be replaced with the above, but even better is the one above that
     // else if (key === "age")
     //   pool
     //     .query(`UPDATE pets SET age = ${data[key]} WHERE id = ${petId}`)
