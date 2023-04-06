@@ -23,22 +23,26 @@ GET http://localhost:8000/something
 
 ###
 GET http://localhost:3000/pets
+Authorization: Basic YWRtaW46bWVvd21peA==
 
 ###
 POST http://localhost:3000/pets
+Authorization: Basic YWRtaW46bWVvd21peA==
 Content-Type: application/json
 
 {
-    "age": 100,
-    "kind": "emu",
-    "name": "Bro"
+    "age": 1000,
+    "kind": "space whale",
+    "name": "yoooooooo"
 }
 
 ###
 GET http://localhost:3000/aksjg
+Authorization: Basic YWRtaW46bWVvd21peA==
 
 ###
 PATCH http://localhost:3000/pets/2
+Authorization: Basic YWRtaW46bWVvd21peA==
 Content-Type: application/json
 
 {
@@ -47,3 +51,4 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/pets/2
+Authorization: Basic YWRtaW46bWVvd21peA==
