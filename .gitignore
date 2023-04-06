@@ -1,6 +1,8 @@
 node_modules
 
-# dotenv file
+#dotenv file
 .env
-
+#dotenv template file
+.env.template
+#rest client file
 request.http
